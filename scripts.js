@@ -1,18 +1,6 @@
-var a = 1,
-    b = 3,
-    value;
-    
-value = (a * a) + (2 * a * b) - (b * b);
+var a = prompt('wpisz a');
+var b = prompt('wpisz b');
+var value = (a * a) + (2 * a * b) - (b * b);
 
 console.log('Wynik działania (a * a) + (2 * a * b) - (b * b) wynosi: ' + value);
-
-if (value > 0) {
-  console.log('Wynik jest dodatni');
-} else if (value < 0) {
-  console.log('Wynik jest ujemny');
-}
-if (value == 0) {
-  console.log('WYnik jest rowny zero');
-} else {
-  console.log('Wynik nie jest rowny zero');
-}
+console.log(value === 0 ? 'Wynik 0' : (value > 0 ? 'Dodatni' : 'Ujemny' ));
